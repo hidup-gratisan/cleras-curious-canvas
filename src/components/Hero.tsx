@@ -1,8 +1,41 @@
 import { Button } from "@/components/ui/button";
 import { Mail, Download, Linkedin, Github } from "lucide-react";
+import { motion } from "framer-motion";
 import profileImage from "@/assets/profile-clera.jpg";
 
 const Hero = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8
+      }
+    }
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 1
+      }
+    }
+  };
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Background decoration */}
@@ -10,10 +43,15 @@ const Hero = () => {
       <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-secondary/5 rounded-full blur-3xl" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <motion.div 
+        className="container mx-auto px-6 relative z-10"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           {/* Profile Image */}
-          <div className="flex-shrink-0 animate-fade-in">
+          <motion.div className="flex-shrink-0" variants={imageVariants}>
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden shadow-glow bg-gradient-card p-1 border border-primary/20">
                 <img
@@ -26,10 +64,10 @@ const Hero = () => {
                 <span className="text-2xl">🎓</span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Content */}
-          <div className="flex-1 text-center lg:text-left animate-slide-in">
+          <motion.div className="flex-1 text-center lg:text-left" variants={itemVariants}>
             <h1 className="text-5xl lg:text-7xl font-display font-black text-foreground mb-6 tracking-tight">
               Clera Agretyas <br />
               <span className="bg-gradient-primary bg-clip-text text-transparent">Nur Anisa</span>
@@ -45,7 +83,10 @@ const Hero = () => {
               Universitas Muhammadiyah Ponorogo with expertise in early childhood development.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
+              variants={itemVariants}
+            >
               <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0 font-semibold">
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me
@@ -54,9 +95,12 @@ const Hero = () => {
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
-            </div>
+            </motion.div>
 
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <motion.div 
+              className="flex gap-4 justify-center lg:justify-start"
+              variants={itemVariants}
+            >
               <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
                 <Linkedin className="h-5 w-5" />
               </Button>
@@ -66,10 +110,10 @@ const Hero = () => {
               <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
                 <Mail className="h-5 w-5" />
               </Button>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
