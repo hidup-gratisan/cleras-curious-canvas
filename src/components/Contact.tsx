@@ -1,0 +1,146 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+
+const Contact = () => {
+  const contactInfo = [
+    {
+      icon: Mail,
+      label: "Email",
+      value: "clera.anisa@email.com",
+      href: "mailto:clera.anisa@email.com"
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+62 xxx-xxxx-xxxx",
+      href: "tel:+62xxxxxxxxxx"
+    },
+    {
+      icon: MapPin,
+      label: "Location",
+      value: "Ponorogo, East Java, Indonesia",
+      href: "#"
+    }
+  ];
+
+  return (
+    <section id="contact" className="py-20 bg-muted/30">
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-foreground mb-4">Get In Touch</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            I'm always excited to discuss new opportunities in early childhood education. 
+            Let's connect and explore how I can contribute to your educational institution.
+          </p>
+        </div>
+
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12">
+          {/* Contact Information */}
+          <div className="animate-slide-in">
+            <h3 className="text-2xl font-semibold text-foreground mb-8">Contact Information</h3>
+            
+            <div className="space-y-6 mb-8">
+              {contactInfo.map((info, index) => (
+                <Card key={index} className="shadow-soft border-0 bg-card hover:shadow-elegant transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
+                        <info.icon className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <div>
+                        <p className="text-sm text-muted-foreground">{info.label}</p>
+                        <a 
+                          href={info.href}
+                          className="text-foreground font-medium hover:text-primary transition-colors"
+                        >
+                          {info.value}
+                        </a>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <Card className="shadow-soft border-0 bg-card">
+              <CardContent className="p-6">
+                <h4 className="font-semibold text-foreground mb-4">Available For</h4>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>• Full-time teaching positions</li>
+                  <li>• Substitute teaching opportunities</li>
+                  <li>• Educational consulting</li>
+                  <li>• Curriculum development projects</li>
+                  <li>• Workshops and training sessions</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Contact Form */}
+          <div className="animate-fade-in">
+            <Card className="shadow-elegant border-0 bg-card">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-semibold text-foreground mb-6">Send a Message</h3>
+                
+                <form className="space-y-6">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label className="text-sm font-medium text-foreground mb-2 block">
+                        First Name
+                      </label>
+                      <Input placeholder="Your first name" />
+                    </div>
+                    <div>
+                      <label className="text-sm font-medium text-foreground mb-2 block">
+                        Last Name
+                      </label>
+                      <Input placeholder="Your last name" />
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      Email
+                    </label>
+                    <Input type="email" placeholder="your.email@example.com" />
+                  </div>
+                  
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      Subject
+                    </label>
+                    <Input placeholder="What is this regarding?" />
+                  </div>
+                  
+                  <div>
+                    <label className="text-sm font-medium text-foreground mb-2 block">
+                      Message
+                    </label>
+                    <Textarea 
+                      placeholder="Your message..." 
+                      className="min-h-[120px]"
+                    />
+                  </div>
+                  
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full bg-primary hover:bg-primary/90 shadow-soft"
+                  >
+                    <Send className="mr-2 h-5 w-5" />
+                    Send Message
+                  </Button>
+                </form>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;
