@@ -13,11 +13,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="font-bold text-xl text-primary">
+          <div className="font-bold text-xl bg-gradient-primary bg-clip-text text-transparent font-display">
             Clera Anisa
           </div>
 
@@ -32,7 +32,7 @@ const Navigation = () => {
                 {item.label}
               </a>
             ))}
-            <Button className="bg-primary hover:bg-primary/90">
+            <Button className="bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0 font-semibold">
               Download CV
             </Button>
           </div>
@@ -50,7 +50,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-border">
+          <div className="md:hidden py-4 border-t border-border/50">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
@@ -62,7 +62,7 @@ const Navigation = () => {
                   {item.label}
                 </a>
               ))}
-              <Button className="bg-primary hover:bg-primary/90 w-fit">
+              <Button className="bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0 font-semibold w-fit">
                 Download CV
               </Button>
             </div>

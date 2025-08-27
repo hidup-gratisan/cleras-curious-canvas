@@ -29,7 +29,7 @@ const About = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">About Me</h2>
+          <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             As a fresh graduate in Early Childhood Education, I bring enthusiasm, 
             contemporary knowledge, and a genuine passion for helping children reach their full potential.
@@ -58,9 +58,9 @@ const About = () => {
 
           <div className="grid grid-cols-2 gap-4 animate-fade-in">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="shadow-soft hover:shadow-elegant transition-all duration-300 border-0 bg-card">
+              <Card key={index} className="shadow-soft hover:shadow-glow transition-all duration-500 border border-border/50 bg-gradient-card backdrop-blur-sm hover:border-primary/30">
                 <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mx-auto mb-4 shadow-soft">
                     <highlight.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <h4 className="font-semibold text-foreground mb-2">{highlight.title}</h4>

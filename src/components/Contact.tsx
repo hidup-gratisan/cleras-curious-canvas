@@ -30,7 +30,7 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Get In Touch</h2>
+          <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">Get In Touch</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             I'm always excited to discuss new opportunities in early childhood education. 
             Let's connect and explore how I can contribute to your educational institution.
@@ -44,10 +44,10 @@ const Contact = () => {
             
             <div className="space-y-6 mb-8">
               {contactInfo.map((info, index) => (
-                <Card key={index} className="shadow-soft border-0 bg-card hover:shadow-elegant transition-all duration-300">
+                <Card key={index} className="shadow-soft border border-border/50 bg-gradient-card hover:shadow-glow hover:border-primary/30 transition-all duration-500 backdrop-blur-sm">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center shadow-soft">
                         <info.icon className="h-6 w-6 text-primary-foreground" />
                       </div>
                       <div>
@@ -65,7 +65,7 @@ const Contact = () => {
               ))}
             </div>
 
-            <Card className="shadow-soft border-0 bg-card">
+            <Card className="shadow-soft border border-border/50 bg-gradient-card backdrop-blur-sm">
               <CardContent className="p-6">
                 <h4 className="font-semibold text-foreground mb-4">Available For</h4>
                 <ul className="text-muted-foreground space-y-2">
@@ -81,7 +81,7 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div className="animate-fade-in">
-            <Card className="shadow-elegant border-0 bg-card">
+            <Card className="shadow-glow border border-border/50 bg-gradient-card backdrop-blur-sm hover:border-primary/30 transition-all duration-500">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-foreground mb-6">Send a Message</h3>
                 
@@ -128,7 +128,7 @@ const Contact = () => {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full bg-primary hover:bg-primary/90 shadow-soft"
+                    className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300 font-semibold border-0"
                   >
                     <Send className="mr-2 h-5 w-5" />
                     Send Message

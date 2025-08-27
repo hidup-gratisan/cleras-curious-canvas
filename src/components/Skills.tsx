@@ -57,7 +57,7 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Skills & Competencies</h2>
+          <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">Skills & Competencies</h2>
           <p className="text-xl text-muted-foreground">
             Professional skills and personal qualities that make me an effective educator
           </p>
@@ -66,10 +66,10 @@ const Skills = () => {
         {/* Technical Skills */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="shadow-soft border-0 bg-card animate-fade-in">
+            <Card key={index} className="shadow-soft border border-border/50 bg-gradient-card animate-fade-in hover:shadow-glow hover:border-primary/30 transition-all duration-500 backdrop-blur-sm">
               <CardContent className="p-6">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 bg-gradient-primary rounded-xl flex items-center justify-center shadow-soft">
                     <category.icon className="h-5 w-5 text-primary-foreground" />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
@@ -93,12 +93,12 @@ const Skills = () => {
 
         {/* Personal Qualities */}
         <div>
-          <h3 className="text-2xl font-bold text-foreground text-center mb-12">Personal Qualities</h3>
+          <h3 className="text-2xl font-display font-bold text-foreground text-center mb-12">Personal Qualities</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {personalQualities.map((item, index) => (
-              <Card key={index} className="shadow-soft border-0 bg-card hover:shadow-elegant transition-all duration-300 animate-fade-in">
+              <Card key={index} className="shadow-soft border border-border/50 bg-gradient-card hover:shadow-glow hover:border-secondary/30 transition-all duration-500 animate-fade-in backdrop-blur-sm">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-soft">
                     <item.icon className="h-8 w-8 text-secondary-foreground" />
                   </div>
                   <h4 className="text-lg font-semibold text-foreground mb-2">{item.quality}</h4>

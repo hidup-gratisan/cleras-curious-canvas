@@ -7,18 +7,18 @@ const Education = () => {
     <section id="education" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Education</h2>
+          <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">Education</h2>
           <p className="text-xl text-muted-foreground">
             My academic foundation in early childhood education
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="shadow-elegant border-0 bg-card animate-fade-in">
+          <Card className="shadow-glow border border-border/50 bg-gradient-card backdrop-blur-sm animate-fade-in hover:border-primary/30 transition-all duration-500">
             <CardContent className="p-8">
               <div className="flex flex-col lg:flex-row gap-8">
                 <div className="flex-shrink-0">
-                  <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center">
+                  <div className="w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-soft">
                     <Award className="h-10 w-10 text-primary-foreground" />
                   </div>
                 </div>
