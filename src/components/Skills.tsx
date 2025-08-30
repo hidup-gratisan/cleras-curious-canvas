@@ -1,56 +1,56 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { Palette, Users, BookOpen, Heart, Brain, Music } from "lucide-react";
+import { Monitor, Users, FileText, Heart, Brain, Database } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Teaching & Pedagogy",
-      icon: BookOpen,
+      title: "Office Administration",
+      icon: FileText,
       skills: [
-        { name: "Curriculum Development", level: 85 },
-        { name: "Lesson Planning", level: 90 },
-        { name: "Assessment & Evaluation", level: 80 },
-        { name: "Differentiated Instruction", level: 75 }
+        { name: "Pengelolaan arsip dan dokumen", level: 90 },
+        { name: "Penyusunan laporan administrasi", level: 85 },
+        { name: "Dasar manajemen jadwal dan kalender kerja", level: 88 },
+        { name: "Document Management", level: 90 }
       ]
     },
     {
-      title: "Child Development",
-      icon: Brain,
+      title: "Software Proficiency",
+      icon: Monitor,
       skills: [
-        { name: "Developmental Psychology", level: 88 },
-        { name: "Behavioral Management", level: 82 },
-        { name: "Social-Emotional Learning", level: 85 },
-        { name: "Cognitive Development", level: 80 }
+        { name: "Penggunaan Canva dan Power point", level: 85 },
+        { name: "Microsoft Office Suite", level: 80 },
+        { name: "Penguasaan software perkantoran", level: 88 },
+        { name: "Digital Communication", level: 82 }
       ]
     },
     {
-      title: "Communication",
+      title: "Communication & Support",
       icon: Users,
       skills: [
-        { name: "Parent-Teacher Communication", level: 85 },
-        { name: "Child Communication", level: 92 },
+        { name: "Keterampilan komunikasi", level: 90 },
+        { name: "Customer Service", level: 85 },
         { name: "Team Collaboration", level: 88 },
-        { name: "Presentation Skills", level: 78 }
+        { name: "Professional Communication", level: 86 }
       ]
     },
     {
-      title: "Creative Arts",
-      icon: Palette,
+      title: "Administrative Tasks",
+      icon: Database,
       skills: [
-        { name: "Art & Craft Activities", level: 90 },
-        { name: "Music & Movement", level: 75 },
-        { name: "Storytelling", level: 88 },
-        { name: "Creative Play Design", level: 85 }
+        { name: "Cash Reconciliation", level: 85 },
+        { name: "Data Recording", level: 88 },
+        { name: "Document Archiving", level: 90 },
+        { name: "Scheduling", level: 82 }
       ]
     }
   ];
 
   const personalQualities = [
-    { quality: "Patient", icon: Heart, description: "Understanding and patient with children's learning pace" },
-    { quality: "Creative", icon: Palette, description: "Innovative in designing engaging learning activities" },
-    { quality: "Empathetic", icon: Users, description: "Deeply understanding of children's emotional needs" },
-    { quality: "Adaptable", icon: Brain, description: "Flexible in adjusting teaching methods to individual needs" }
+    { quality: "Detail-Oriented", icon: Heart, description: "Attention to detail in administrative tasks and documentation" },
+    { quality: "Organized", icon: FileText, description: "Strong organizational skills for efficient workflow management" },
+    { quality: "Reliable", icon: Users, description: "Dependable and consistent in meeting deadlines and commitments" },
+    { quality: "Adaptable", icon: Brain, description: "Flexible in learning new systems and adapting to changing priorities" }
   ];
 
   return (
@@ -59,7 +59,7 @@ const Skills = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">Skills & Competencies</h2>
           <p className="text-xl text-muted-foreground">
-            Professional skills and personal qualities that make me an effective educator
+            Transferable skills from education background and new administrative competencies
           </p>
         </div>
 

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Download, Linkedin, Github } from "lucide-react";
+import { Mail, Download, Linkedin, FileText, Award } from "lucide-react";
 import { motion } from "framer-motion";
-import profileImage from "@/assets/profile-clera.jpg";
+import profileImage from "@/assets/profile-clera.png";
 
 const Hero = () => {
   const containerVariants = {
@@ -60,9 +60,6 @@ const Hero = () => {
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-secondary rounded-full flex items-center justify-center shadow-glow border border-secondary/30">
-                <span className="text-2xl">🎓</span>
-              </div>
             </div>
           </motion.div>
 
@@ -74,13 +71,15 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground mb-4">
-              Fresh Graduate | Early Childhood Education
+              Sarjana Pendidikan | Pendidikan AUD
             </p>
             
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-              Passionate educator dedicated to nurturing young minds and creating 
-              engaging learning environments for children. Recently graduated from 
-              Universitas Muhammadiyah Ponorogo with expertise in early childhood development.
+              Lulusan S1 Pendidikan yang memiliki kemampuan dan pengalaman di bidang administrasi dan organisasi
+              yang baik. Berpengalaman dalam mengelola dokumen, mengatur jadwal, dan mendukung operasional
+              kantor secara efektif. Aktif terlibat dalam berbagai kegiatan organisasi kampus dan mengikuti berbagai
+              kursus untuk memperkuat kemampuan profesional, termasuk penguasaan software perkantoran dan
+              keterampilan komunikasi.
             </p>
 
             <motion.div 
@@ -105,7 +104,10 @@ const Hero = () => {
                 <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
-                <Github className="h-5 w-5" />
+                <FileText className="h-5 w-5" />
+              </Button>
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
+                <Award className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
                 <Mail className="h-5 w-5" />

@@ -6,49 +6,74 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experiences = [
     {
-      title: "Teaching Intern",
-      company: "TK Aisyiyah Bustanul Athfal",
-      location: "Ponorogo, East Java",
-      period: "Aug 2023 - Dec 2023",
-      type: "Internship",
-      description: "Gained hands-on experience in early childhood education through comprehensive teaching internship program. Developed practical skills in classroom management, lesson planning, and child development assessment.",
+      title: "Administrative Support",
+      company: "Workforce Academy Partnership",
+      location: "Indonesia",
+      period: "2025",
+      type: "Administrative",
+      description: "Providing administrative support in workforce development programs, including document management and organizational coordination.",
       achievements: [
-        "Assisted in daily classroom activities for 20+ children aged 4-6 years",
-        "Developed and implemented creative learning activities",
-        "Collaborated with senior teachers on curriculum delivery",
-        "Conducted parent-teacher communication sessions"
+        "Administrative support for workforce programs",
+        "Document management and organization",
+        "Coordination of training activities"
       ],
-      skills: ["Classroom Management", "Lesson Planning", "Child Assessment", "Parent Communication"]
+      skills: ["Administrative Support", "Document Management", "Organization"]
     },
     {
-      title: "Volunteer Teaching Assistant",
-      company: "PAUD Melati Ponorogo",
-      location: "Ponorogo, East Java", 
-      period: "Jan 2023 - Jul 2023",
-      type: "Volunteer",
-      description: "Volunteered as teaching assistant to gain practical experience in early childhood education while completing academic studies. Focused on supporting children with diverse learning needs.",
+      title: "Tour Leader",
+      company: "Merpati Nusantara",
+      location: "Indonesia",
+      period: "April 2024 – Oktober 2024",
+      type: "Leadership",
+      description: "Led tour groups providing information and educational services to participants, ensuring excellent customer service and team coordination.",
       achievements: [
-        "Supported 15+ children with various learning activities",
-        "Assisted in organizing educational games and storytelling sessions",
-        "Helped create visual learning materials and displays",
-        "Participated in monthly parent engagement events"
+        "Led tour groups and provided educational services",
+        "Ensured excellent customer service",
+        "Coordinated team activities effectively"
       ],
-      skills: ["Creative Activities", "Visual Materials", "Storytelling", "Community Engagement"]
+      skills: ["Leadership", "Customer Service", "Team Coordination"]
     },
     {
-      title: "Student Mentor",
+      title: "Staff Administrasi (Rekap)",
+      company: "Koperasi Jaya Sejati",
+      location: "Indonesia",
+      period: "Januari 2019 – Juli 2020",
+      type: "Administrative",
+      description: "Handled administrative tasks including cash reconciliation, data recording, document archiving, and scheduling for cooperative operations.",
+      achievements: [
+        "Merekapitulasi kas masuk dan keluar",
+        "Mencatat dan menelaah data calon peminjam",
+        "Merekap penyaluran uang setiap bulan",
+        "Melakukan pengarsipan terhadap semua dokumen",
+        "Melakukan penjadwalan kegiatan atau aktifitas"
+      ],
+      skills: ["Cash Reconciliation", "Data Recording", "Document Archiving", "Scheduling"]
+    },
+    {
+      title: "Asisten Dosen",
       company: "Universitas Muhammadiyah Ponorogo",
       location: "Ponorogo, East Java",
-      period: "Sep 2022 - Dec 2023", 
-      type: "Leadership",
-      description: "Served as student mentor for junior students in the Early Childhood Education program. Provided academic guidance and support for new students adapting to university life.",
+      period: "Maret 2022 – Oktober 2024",
+      type: "Academic",
+      description: "Assisted lecturers in creating articles and dissertations, served on accreditation teams, and helped teach Indonesian language courses.",
       achievements: [
-        "Mentored 10+ junior students throughout their first year",
-        "Organized study groups and academic workshops",
-        "Facilitated peer-to-peer learning sessions",
-        "Achieved 95% mentee retention rate"
+        "Bertugas sebagai pendamping dosen dalam pembuatan artikel serta disertasi",
+        "Tim akreditasi prodi",
+        "Membantu mengajar mata kuliah Bahasa Indonesia"
       ],
-      skills: ["Leadership", "Mentoring", "Academic Support", "Peer Learning"]
+      skills: ["Academic Support", "Research Assistance", "Teaching"]
+    },
+    {
+      title: "Asisten Mengajar",
+      company: "POCENTER",
+      location: "Indonesia",
+      period: "Agustus 2021 – Februari 2022",
+      type: "Teaching",
+      description: "Taught early childhood education using Montessori methods, focusing on child development and educational activities.",
+      achievements: [
+        "Mengajar Anak Usia Dini dengan metode pembelajaran Montessori"
+      ],
+      skills: ["Early Childhood Education", "Montessori Method", "Child Development"]
     }
   ];
 
@@ -85,7 +110,7 @@ const Experience = () => {
         >
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">Experience</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Practical experience in early childhood education through internships, volunteer work, and leadership roles
+            Professional experience in administrative, leadership, and educational roles
           </p>
         </motion.div>
 

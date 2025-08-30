@@ -9,19 +9,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "clera.anisa@email.com",
-      href: "mailto:clera.anisa@email.com"
+      value: "Agretyas@gmail.com",
+      href: "mailto:Agretyas@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+62 xxx-xxxx-xxxx",
-      href: "tel:+62xxxxxxxxxx"
+      value: "+62-8533-6272-463",
+      href: "tel:+6285336272463"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Ponorogo, East Java, Indonesia",
+      value: "Nganjuk, Jawa Timur, 64474",
       href: "#"
     }
   ];
@@ -32,8 +32,8 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">Get In Touch</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            I'm always excited to discuss new opportunities in early childhood education. 
-            Let's connect and explore how I can contribute to your educational institution.
+            I'm excited to discuss administrative opportunities and how my educational background 
+            and administrative experience can benefit your organization.
           </p>
         </div>
 
@@ -69,11 +69,11 @@ const Contact = () => {
               <CardContent className="p-6">
                 <h4 className="font-semibold text-foreground mb-4">Available For</h4>
                 <ul className="text-muted-foreground space-y-2">
-                  <li>• Full-time teaching positions</li>
-                  <li>• Substitute teaching opportunities</li>
-                  <li>• Educational consulting</li>
-                  <li>• Curriculum development projects</li>
-                  <li>• Workshops and training sessions</li>
+                  <li>• Administrative and office support positions</li>
+                  <li>• Document management and organizational roles</li>
+                  <li>• Customer service and coordination roles</li>
+                  <li>• Educational support and training positions</li>
+                  <li>• Professional development and training opportunities</li>
                 </ul>
               </CardContent>
             </Card>

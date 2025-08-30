@@ -1,27 +1,27 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Heart, Users, BookOpen } from "lucide-react";
+import { GraduationCap, Target, Users, TrendingUp } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
       icon: GraduationCap,
-      title: "Fresh Graduate",
-      description: "Recently completed my degree in Early Childhood Education from Universitas Muhammadiyah Ponorogo (2024)"
+      title: "Education Background",
+      description: "Sarjana Pendidikan from Universitas Muhammadiyah Ponorogo (2020-2024) with IPK 3.84/4.00"
     },
     {
-      icon: Heart,
-      title: "Passionate Educator",
-      description: "Deeply committed to creating nurturing and supportive learning environments for young children"
+      icon: Target,
+      title: "Administrative Experience",
+      description: "Experience in administrative roles including staff administration and tour leadership"
     },
     {
       icon: Users,
-      title: "Child Development",
-      description: "Specialized knowledge in early childhood development, learning theories, and age-appropriate teaching methods"
+      title: "Organizational Skills",
+      description: "Strong organizational and communication skills developed through various professional experiences"
     },
     {
-      icon: BookOpen,
-      title: "Lifelong Learner",
-      description: "Continuously seeking new knowledge and innovative approaches to early childhood education"
+      icon: TrendingUp,
+      title: "Professional Development",
+      description: "Continuous learning through courses and certifications to enhance professional capabilities"
     }
   ];
 
@@ -31,28 +31,30 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            As a fresh graduate in Early Childhood Education, I bring enthusiasm, 
-            contemporary knowledge, and a genuine passion for helping children reach their full potential.
+            Lulusan S1 Pendidikan yang memiliki kemampuan dan pengalaman di bidang administrasi dan organisasi
+            yang baik. Berpengalaman dalam mengelola dokumen, mengatur jadwal, dan mendukung operasional
+            kantor secara efektif.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="animate-slide-in">
-            <h3 className="text-2xl font-semibold text-foreground mb-6">My Journey</h3>
+            <h3 className="text-2xl font-semibold text-foreground mb-6">My Professional Journey</h3>
             <p className="text-muted-foreground mb-6">
-              I recently graduated from Universitas Muhammadiyah Ponorogo in 2024 with a degree in 
-              Pendidikan Guru Anak Usia Dini (Early Childhood Education). Throughout my studies, 
-              I developed a deep understanding of child development, educational psychology, and 
-              innovative teaching methodologies.
+              I graduated from Universitas Muhammadiyah Ponorogo in 2024 with a degree in 
+              Pendidikan Guru Anak Usia Dini (Early Childhood Education). My academic background has equipped me with 
+              strong organizational skills, attention to detail, and excellent communication abilities.
             </p>
             <p className="text-muted-foreground mb-6">
-              My academic journey has equipped me with both theoretical knowledge and practical 
-              experience in creating engaging, age-appropriate learning experiences that foster 
-              children's cognitive, social, and emotional development.
+              Throughout my career, I have gained valuable experience in administrative roles, including 
+              staff administration, tour leadership, and educational support positions. I have actively 
+              participated in campus organizational activities and pursued various courses to strengthen 
+              my professional skills, particularly in office software and communication.
             </p>
             <p className="text-muted-foreground">
-              I believe every child is unique and deserves personalized attention to help them 
-              discover their interests and develop their potential in a safe, encouraging environment.
+              I am committed to applying my strong work ethic, reliability, and eagerness to learn 
+              in administrative roles where I can contribute to organizational efficiency and 
+              provide excellent support to teams and clients.
             </p>
           </div>
 
