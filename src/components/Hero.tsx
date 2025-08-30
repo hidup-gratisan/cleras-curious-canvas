@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Download, Linkedin, FileText, Award } from "lucide-react";
 import { motion } from "framer-motion";
 import profileImage from "@/assets/profile-clera.png";
+import cvPdf from "@/assets/agretyas.pdf";
 
 const Hero = () => {
   const containerVariants = {
@@ -86,11 +87,23 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
               variants={itemVariants}
             >
-              <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0 font-semibold">
+              <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 border-0 font-semibold" onClick={() => window.location.href = 'mailto:agretyas@gmail.com'}>
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me
               </Button>
-              <Button variant="outline" size="lg" className="border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary backdrop-blur-sm">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-primary/50 text-foreground hover:bg-primary/10 hover:border-primary backdrop-blur-sm"
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = cvPdf;
+                  link.download = 'Clera_Agretyas_CV.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+              >
                 <Download className="mr-2 h-5 w-5" />
                 Download CV
               </Button>
@@ -100,7 +113,7 @@ const Hero = () => {
               className="flex gap-4 justify-center lg:justify-start"
               variants={itemVariants}
             >
-              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm" onClick={() => window.open('https://www.linkedin.com/in/clera-agretyas/', '_blank')}>
                 <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
@@ -109,7 +122,7 @@ const Hero = () => {
               <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
                 <Award className="h-5 w-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm">
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10 hover:shadow-soft backdrop-blur-sm" onClick={() => window.location.href = 'mailto:agretyas@gmail.com'}>
                 <Mail className="h-5 w-5" />
               </Button>
             </motion.div>
