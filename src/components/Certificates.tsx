@@ -5,15 +5,103 @@ import { Calendar, MapPin, Award, ExternalLink, Shield, Star } from "lucide-reac
 const Certificates = () => {
   const certificates = [
     {
-      title: "Pelatihan Dasar Microsoft Excel",
-      issuer: "Workforce Academy Partnership",
-      credentialId: "MS-EXCEL-2025-001",
-      issueDate: "2025",
+      title: "Finding, Sorting, & Filtering Data in Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "358d5565c83fb34ac2661bdbe62af6ee",
+      issueDate: "2024",
       expiryDate: "2028",
       status: "Active",
-      verificationUrl: "#",
-      description: "Certification in basic Microsoft Excel training covering fundamental spreadsheet skills, data management, and basic formulas for administrative work.",
-      competencies: ["Microsoft Excel", "Data Management", "Basic Formulas", "Spreadsheet Skills"]
+      verificationUrl: "https://coursera.org/share/358d5565c83fb34ac2661bdbe62af6ee",
+      description: "Certification in finding, sorting, and filtering data in Microsoft Excel, covering spreadsheet software, business intelligence, data entry, data analysis expressions (DAX), and Microsoft Excel.",
+      competencies: ["Spreadsheet Software", "Business Intelligence", "Data Entry", "Data Analysis Expressions (DAX)", "Microsoft Excel"]
+    },
+    {
+      title: "Create a Simple Gantt Chart using Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "641703fbcb090ef31c18ae3a6ce2d8e3",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/641703fbcb090ef31c18ae3a6ce2d8e3",
+      description: "Certification in creating simple Gantt charts using Microsoft Excel, covering timelines, scheduling, project schedules, data visualization, project management software, dashboard, and Microsoft Excel.",
+      competencies: ["Timelines", "Scheduling", "Project Schedules", "Data Visualization", "Project Management Software", "Dashboard", "Microsoft Excel"]
+    },
+    {
+      title: "Creating a Budget with Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "ce5407da72d82465f69e1af62ec0e615",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/ce5407da72d82465f69e1af62ec0e615",
+      description: "Certification in creating budgets with Microsoft Excel, covering financial data, spreadsheet software, accounting and finance software, Microsoft 365, Excel formulas, budget management, budgeting, and Microsoft Excel.",
+      competencies: ["Financial Data", "Spreadsheet Software", "Accounting and Finance Software", "Microsoft 365", "Excel Formulas", "Budget Management", "Budgeting", "Microsoft Excel"]
+    },
+    {
+      title: "Create a Financial Statement using Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "c6c8b323f24c9827b06c5e6ffc32eedf",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/c6c8b323f24c9827b06c5e6ffc32eedf",
+      description: "Certification in creating financial statements using Microsoft Excel, covering bookkeeping, financial data, balance sheet, financial reporting, financial accounting, profit and loss (P&L) management, Excel formulas, data entry, Microsoft Excel, and financial statements.",
+      competencies: ["Bookkeeping", "Financial Data", "Balance Sheet", "Financial Reporting", "Financial Accounting", "Profit and Loss (P&L) Management", "Excel Formulas", "Data Entry", "Microsoft Excel", "Financial Statements"]
+    },
+    {
+      title: "Create Charts and Dashboards Using Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "764d35e6d1e7a5f36463d992bada04e7",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/764d35e6d1e7a5f36463d992bada04e7",
+      description: "Certification in creating charts and dashboards using Microsoft Excel, covering spreadsheet software, Microsoft 365, data analysis, data visualization, trend analysis, dashboard, and Microsoft Excel.",
+      competencies: ["Spreadsheet Software", "Microsoft 365", "Data Analysis", "Data Visualization", "Trend Analysis", "Dashboard", "Microsoft Excel"]
+    },
+    {
+      title: "How to Use Lookup Reference Math and Text Functions in Excel",
+      issuer: "Coursera",
+      credentialId: "b459899b4cc44041937caa54f97514f4",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/b459899b4cc44041937caa54f97514f4",
+      description: "Certification in using lookup reference math and text functions in Excel, covering spreadsheet software, data validation, and Microsoft Excel.",
+      competencies: ["Spreadsheet Software", "Data Validation", "Microsoft Excel"]
+    },
+    {
+      title: "Introduction to Data Analysis using Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "53c3e80c4ef49252619743f321e30d06",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/53c3e80c4ef49252619743f321e30d06",
+      description: "Certification in introduction to data analysis using Microsoft Excel, covering spreadsheet software, data analysis, data manipulation, data mining, pivot tables and charts, Excel formulas, and Microsoft Excel.",
+      competencies: ["Spreadsheet Software", "Data Analysis", "Data Manipulation", "Data Mining", "Pivot Tables And Charts", "Excel Formulas", "Microsoft Excel"]
+    },
+    {
+      title: "Using Basic Formulas and Functions in Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "a995254cde3f812fec5b51512fa9b4ef",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/a995254cde3f812fec5b51512fa9b4ef",
+      description: "Certification in using basic formulas and functions in Microsoft Excel, covering spreadsheet software, Microsoft 365, data analysis, Excel formulas, business mathematics, gross profit, and Microsoft Excel.",
+      competencies: ["Spreadsheet Software", "Microsoft 365", "Data Analysis", "Excel Formulas", "Business Mathematics", "Gross Profit", "Microsoft Excel"]
+    },
+    {
+      title: "Getting Started with Microsoft Excel",
+      issuer: "Coursera",
+      credentialId: "5727b9afc0767bcf4f45da4ece776f24",
+      issueDate: "2024",
+      expiryDate: "2028",
+      status: "Active",
+      verificationUrl: "https://coursera.org/share/5727b9afc0767bcf4f45da4ece776f24",
+      description: "Certification in getting started with Microsoft Excel, covering spreadsheet software, Microsoft 365, productivity software, Excel formulas, and Microsoft Excel.",
+      competencies: ["Spreadsheet Software", "Microsoft 365", "Productivity Software", "Excel Formulas", "Microsoft Excel"]
     }
   ];
 
@@ -81,7 +169,10 @@ const Certificates = () => {
                           <span className="text-xs text-muted-foreground font-medium">Credential ID:</span>
                           <p className="text-sm font-mono text-foreground">{cert.credentialId}</p>
                         </div>
-                        <button className="flex items-center gap-1 text-xs text-primary hover:text-primary/80 transition-colors">
+                        <button 
+                          className="flex items-center gap-1 text-xs text-primary hover:text-primary/80 transition-colors"
+                          onClick={() => window.open(cert.verificationUrl, '_blank')}
+                        >
                           <ExternalLink className="h-3 w-3" />
                           Verify
                         </button>
